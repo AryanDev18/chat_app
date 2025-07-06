@@ -94,7 +94,7 @@ const Signup = () => {
           "Content-Type" : "application-json"
         }
       }
-
+console.log(import.meta.env.VITE_BACKEND_URL) ;
       const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/user` , {name , email , password , pic} ,{
         config
       }) ;
